@@ -2,6 +2,7 @@
 from bs4 import BeautifulSoup
 import requests
 
+# base url
 url = "https://stackoverflow.com/questions"
 page_Limit = 1
 
