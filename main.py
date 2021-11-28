@@ -45,8 +45,6 @@ def scrape():
         questions.extend(page_questions)
     return questions
 
-def answers (question_url):
-    full_url =  "https://stackoverflow.com"+question_url
 
 if __name__ == "__main__":
     print(scrape())
