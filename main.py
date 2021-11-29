@@ -4,7 +4,7 @@ import requests
 
 # base url
 url = "https://stackoverflow.com/questions"
-page_Limit = 1
+page_Limit = 1000 #number of page you want to scrapy from 1 to 1000
 
 def build_url(base_url = url , tab="newest", page = 1):
     # page 2 url exemple 
