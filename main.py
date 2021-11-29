@@ -46,7 +46,6 @@ def scrape():
         questions.extend(page_questions)
     return questions
 
-
 def export_data():
     data = scrape()
     print (type(data))
