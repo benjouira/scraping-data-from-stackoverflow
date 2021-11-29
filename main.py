@@ -47,6 +47,16 @@ def scrape():
     return questions
 
 
+def export_data():
+    data = scrape()
+    print (type(data))
+    with open("questions.csv", "w") as data_file:
+        fieldnames = ["question","question_url","answers","views","votes"]
+        data_writer = csv.DictWriter(data_file, fieldnames=fieldnames)
+        data_writer.writeheader()
+        for d in data:
+            data_writer.writerow(d)
+        print("Done")
+
 if __name__ == "__main__":
-    print(scrape())
-    # scrape()
+    export_data()
