@@ -58,6 +58,4 @@ def export_data():
         print("Done")
 
 if __name__ == "__main__":
-    export_data()
-
-    
+    export_data()  
